@@ -1,0 +1,47 @@
+.tituloforumario{
+	margin-top: 300px;
+}
+.login{
+	float: right;
+}
+#contenedor{
+	margin-top: 2em;
+}
+.seguir{
+	float: left;
+}
+.contacto{
+	float: right;
+}
+footer{
+	padding-top:2em; 
+	
+}
+
+.f1{
+	float: left;
+}
+.f2{
+	float: right;
+}
+#titulo{
+	margin:3em;
+}
+.formu{
+	margin-top: 2em;
+}
+#jum{
+	height: 450px;
+}
+.face{
+	float: left;
+}
+.botonface{
+	background-color: rgba(59, 89, 152, 1.0);
+	width: 40px;
+	float: left;
+}
+body{
+	background-color: rgba(60,189,167,0.2);
+	font-family: 'Oxygen', sans-serif;
+}

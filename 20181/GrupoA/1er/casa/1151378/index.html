@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TKSIS</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Boris Muriel">
+	<meta name="code" 	content="1151378">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400|Lato:300,400' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+	  <div class="container">
+	    <div class="navbar-header" style="height: 75px">
+	      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a href="index.html" class="navbar-brand"><picture id="logo"><img title="logo"  src="https://image.flaticon.com/icons/png/512/327/327463.png"/></picture>Te Enviamos Lo Que Sea S.A.S.</a>
+	    </div>
+	    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+	      <ul class="nav navbar-nav">
+	        <li><a href="index.html"><picture id="icon"><img title="icon"  src="https://image.flaticon.com/icons/svg/23/23665.svg"/></picture>Inicio</a></li>
+			<li class="dropdown">
+		        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><picture id="icon"><img title="icon"  src="https://cdn2.iconfinder.com/data/icons/employment-linear-black/2048/4767_-_Write_Report-512.png"/></picture>Registro <b class="caret"></b></a>
+		        <ul class="dropdown-menu">
+		          <li><a href="#" id="clnt">Registrarse como cliente</a></li>
+		          <li><a href="#" id="msgr">Registrarse como mensajero</a></li>
+		          <li><a href="#" id="log">Ingresar a cuenta</a></li>
+		          <li><a href="#" id="send">Registrar envio</a></li>
+		        </ul>
+		     </li>
+		     <li><a href="#" id="noso"><picture id="icon"><img title="icon"  src="https://png.icons8.com/ios-glyphs/1600/find-matching-job.png"/></picture>Nosotros</a></li>
+	        <li><a href="#" id="cont"><picture id="icon"><img title="icon"  src="https://cdn3.iconfinder.com/data/icons/pyconic-icons-1-2/512/phone-call-active-512.png"/></picture>Contactenos</a></li>
+	      </ul>
+	    </nav>
+	  </div>
+	</header>
+	<div class="section">
+		<div class="container" id="contenido">
+			<div class="row">
+				<div  class="col-xs-12 col-sm-4"> 
+					<picture> <img src="https://images.parents.mdpcdn.com/sites/parents.com/files/styles/width_360/public/images/skyword/woman_sending_packages.jpg"> </picture> <i><span>Manufacturacion rapida y segura</span></i>
+				</div>
+				<div class="col-xs-12 col-sm-8">
+					<div class="page-header">
+						<h1 style="color: #8181F7;">Garantizamos sus envios</h1>
+					</div>
+					<p>Sus paquetes llegaran siempre a su destino
+					justo como se nos fueron entregados.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div  class="col-xs-12 col-sm-4">
+					<picture> <img src="http://inboundcallcenterphilippines.com/blog/wp-content/uploads/2016/11/Ten-Tips-For-Answering-Telephone-Calls-Appropriately.jpg"> </picture> <i><span>Servicio al cliente continuo</span></i>
+				</div>
+				<div class="col-xs-12 col-sm-8">
+					<div class="page-header">
+						<h1 style="color: #8181F7;">Servicio 24/7</h1>
+					</div>
+						<p>Si necesita informacion de el estado de su
+						entrega o su ubicacion, siempre habra un 
+						operador que respondera sus inquietudes.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<hr></hr>
+			<p class="text-muted">Te Enviamos Lo Que Sea - 2018</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#cont").click(function(event){
+			$("#contenido").load('contact/contacto.html');
+		});
+		$("#noso").click(function(event){
+			$("#contenido").load('contact/nosotros.html');
+		});
+		$("#clnt").click(function(event){
+			$("#contenido").load('register/registroCliente.html');
+		});
+		$("#msgr").click(function(event){
+			$("#contenido").load('register/registroMensajero.html');
+		});
+		$("#log").click(function(event){
+			$("#contenido").load('register/login.html');
+		});
+		$("#send").click(function(event){
+			$("#contenido").load('register/registroEnvio.html');
+		});
+	</script>
+</body>
+</html>

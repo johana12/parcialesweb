@@ -1,0 +1,79 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-1"></div>
+  <div class="col-xs-12 col-sm-10">
+    <h2>
+    Listado de Mensajeros</h2>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th># Mensajero</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Cedula</th>
+        <th>Email</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>M0005</td>
+        <td>Ingrid</td>
+        <td>Sierra</td>
+        <td>1090494352</td>
+        <td>injo_26@gmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="mensajeros"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+       <tr>
+        <td>M0004</td>
+        <td>luz Dary</td>
+        <td>Uribe</td>
+        <td>37344438</td>
+        <td>luzda@gmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="mensajeros"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+       <tr>
+        <td>M0003</td>
+        <td>Antonio</td>
+        <td>Camargo</td>
+        <td>5414955</td>
+        <td>antoniocamargo@gmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="mensajeros"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+       <tr>
+        <td>M0002</td>
+        <td>Jacqueline</td>
+        <td>Roa</td>
+        <td>60331543</td>
+        <td>jrl.69@gmail.com</td>
+        <td><a class="btn btn-danger" href="#" data-mm="mensajeros"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+     <tr>
+        <td>M0001</td>
+        <td>Edwar</td>
+        <td>Camargo</td>
+        <td>1090487891</td>
+        <td>edwaryesidcr@ufps.edu.co</td>
+        <td><a class="btn btn-danger" href="#" data-mm="mensajeros"><span class="glyphicon glyphicon-pencil"></span></a></td>
+        <td><a class="btn btn-danger" href="" ><i class="glyphicon glyphicon-trash"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="form-group col-xs-12 col-sm-12">
+     <button type="submit" class="btn btn-success" id="button" href="envios.html">Nuevo Envio</button>
+  </div>
+  </div>
+  <div class="col-xs-12 col-sm-1"></div>
+</div>
+<script type="text/javascript">
+   $("td a").click(function(event){
+      event.preventDefault();
+      if($(this).data('mm')!= null){
+           $("#contenedor").load($(this).data('mm')+'.html');
+      }
+  });
+</script>

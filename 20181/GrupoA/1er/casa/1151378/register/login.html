@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<script type="text/javascript">
+		$("#clnt2").click(function(event){
+			$("#contenido").load('register/registrarCliente.html');
+		});
+		$("#ingr").click(function(event){
+			$("#contenido").load('register/registrarEnvio.html');
+		});
+	</script>
+</head>
+<div>
+	<form class="form-horizontal">
+	<fieldset>
+
+	<!-- Form Name -->
+	<legend>Login</legend>
+	<p>Por favor ingrese a su cuenta si quiere registrar o administrar sus envios</p>
+
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="user">Usuario:</label>  
+	  <div class="col-md-5">
+	  <input id="Nombre" name="Nombre" type="text" placeholder="Nombre de Usuario" class="form-control input-md" required>
+	  </div>
+	</div>
+	<div class="form-group">
+	  <label class="col-md-4 control-label" for="Empresa">Contraseña:</label>  
+	  <div class="col-md-5">
+	  <input id="pass" name="Empresa" type="password" placeholder="******" class="form-control input-md" required>
+	  </div>
+	</div>
+	<div class="form-group">
+	  <div class="col-md-9">
+	    <button id="ingr" class="btn btn-danger" style="margin-left: 50%;">Ingresar</button>
+	  </div>
+	</div>
+	<hr></hr>
+	<h2 style="font-size: 20px">No tiene una cuenta tksis? <a href="#" id="clnt2">Registrarse</a></h2>
+</div>
+</html>

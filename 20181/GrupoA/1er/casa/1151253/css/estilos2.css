@@ -1,0 +1,13 @@
+header{
+	background: #2c3e50;
+	color: #fff;
+	text-align: left;
+
+}
+header figure{
+	display: inline;
+}
+header h1{
+	display: inline;
+	font-size: 20px;
+}

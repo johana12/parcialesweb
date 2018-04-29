@@ -1,0 +1,147 @@
+
+	<script type="text/javascript">
+alert("Nota:El nombre de cada elemento solo podra tener una palabra")
+</script>  
+<nav class="navbar navbar-default">
+    <div id="menu">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" id="ope_dos">Guardar</a></li>
+        <li><a href="#" id="ope_tres">Cancelar</a></li>     
+      </ul>
+    </div>
+    </div>   
+</nav>
+    
+
+
+          
+          <div class="container" >
+          
+          <div class="row">
+              <div class="col-md-2">
+              <button type="button" class="btn btn-primary bot_for" onclick="agregarTexto()">Agregar cuadro texto
+              </button>
+              </div>
+              <div class="col-md-2">
+              <button type="button" class="btn btn-success bot_for" onclick="agregarAreaTexto()">Agregar area texto</button>
+              </div>
+              <div class="col-md-2">
+              <button type="button" class="btn btn-info bot_for" onclick="agregarComboLista()">Agregar combo lista</button>
+              </div>
+              <div class="col-md-2">
+              <button type="button" class="btn btn-warning bot_for" onclick="agregarCheckbox()" >Agregar checkbox</button>
+              </div>
+              <div class="col-md-2">
+              <button type="button" class="btn btn-info  bot_for" onclick="agregarBotonA()">Agregar B. de Opciones</button>
+              </div>
+              <div class="col-md-2">
+
+             <button type="button" class="btn btn-danger bot_for" onclick="agregarBotonB()">Agregar B. de Enviar</button>
+              </div>
+              
+              
+           <div class="page-header">
+        <h1 >Vista previa<small> &nbsp Vista de como se está estructurando el formulacio</small></h1>
+		</div>   
+
+
+          <div id="contenedor_form_1">
+          <div id="formulario">
+            
+        </div>
+         </div>
+          <div class="page-header">
+        <h1 >Nota:<small> &nbsp Una vez finalizes, selecciona la opcion de guardar</small></h1>
+		</div>
+    </div>
+    </div>
+            
+
+
+  
+
+<script type="text/javascript">
+    
+    $("#ope_dos").click(function(event){
+        $('#contenedor_form').html($('#contenedor_form_1').html());
+	});
+    
+    
+    $("#ope_tres").click(function(event){
+		$("#contenedor_form").load("paginas/formularios/formulario_mensajero.html");
+	});
+    
+    
+    
+    function agregarTexto(){
+              var msn=prompt("Ingrese el nombre del campo de texto");
+        var contenido=document.createElement('div')
+            contenido.innerHTML='<div class="form-group"><label for="'+msn+'" class="control-label">Ingrese '+msn+'</label><input type="text" class="form-control" name="'+msn+'" ></div>';
+            document.getElementById('formulario').appendChild(contenido);
+
+          } 
+    
+    function agregarAreaTexto(){
+              var msn=prompt("Ingrese el nombre del area de texto");
+        var contenido=document.createElement('div')
+            contenido.innerHTML='<div class="form-group"><label for="'+msn+'" class="control-label">Ingrese '+msn+'</label><textarea class="form-control" name="'+msn+'" rows="7" maxlength="100%"></textarea></div>';
+            document.getElementById('formulario').appendChild(contenido);
+
+          }
+    
+    function agregarComboLista(){
+              var msn=prompt("Ingrese el nombre del combo lista");
+               var cantidad=parseInt(prompt("Ingrese la cantidad de items del combo lista"));
+        
+     var cadena="";
+        for (var i = 0; i < cantidad; i++) {
+        var item=prompt("Ingrese item N."+(i+1));
+        cadena+='<option value="'+"A"+i+'">'+item+'</option>';
+        }
+          var contenido=document.createElement('div')
+            contenido.innerHTML='<div class="form-group"><label for="'+msn+'" class="control-label">Ingrese '+msn+'</label><select class="form-control" id="'+msn+'">'+cadena+'</select></div>';
+            document.getElementById('formulario').appendChild(contenido);
+    
+          }
+    
+    function agregarCheckbox(){
+              var msn=prompt("Ingrese el nombre del checkbox");
+               var cantidad=parseInt(prompt("Ingrese la cantidad de items del checkbox"));
+        
+        var cadena="";
+        for (var i = 0; i < cantidad; i++) {
+        var item=prompt("Ingrese item N."+(i+1));
+        cadena+='<label><input type="checkbox" value="'+"A"+i+'">'+item+'</label>';
+        }
+          var contenido=document.createElement('div')
+            contenido.innerHTML='<div class="form-group"><label for="'+msn+'" class="control-label">Ingresa '+msn+'</label><div class="checkbox">'+cadena+'</div></div>';
+            document.getElementById('formulario').appendChild(contenido);
+    
+          }
+    
+   function agregarBotonA(){
+       
+       var msn=prompt("Ingrese el nombre del boton de opciones");
+               var cantidad=parseInt(prompt("Ingrese la cantidad de items del boton de opciones"));
+        
+        var cadena="";
+        for (var i = 0; i < cantidad; i++) {
+        var item_uno=prompt("Ingrese nombre de la dirección URL N."+(i+1));
+        var item_dos=prompt("Ingrese dirección del item ingresado,NOTA: el formato debe ser www.nombre.com,y no podra salir de la pagina por que se cierra el mensaje del navegador.");
+        
+        cadena+='<li><a href="'+item_dos+'">'+item_uno+'</a></li>';
+        }
+          var contenido=document.createElement('div')
+            contenido.innerHTML='<div class="form-group"><div class="btn-group"> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">'+msn+'<span class="caret"></span></button><ul class="dropdown-menu" role="menu">'+cadena+'</ul></div></div>';
+            document.getElementById('formulario').appendChild(contenido);       
+   }
+   function agregarBotonB(){
+        var contenido=document.createElement('div')
+            contenido.innerHTML='<div class="form-group btn_gen "><button class="submit btn btn-success btn-lg" type="submit">Enviar</button></div>';
+            document.getElementById('formulario').appendChild(contenido);
+
+          } 
+
+</script>
+  

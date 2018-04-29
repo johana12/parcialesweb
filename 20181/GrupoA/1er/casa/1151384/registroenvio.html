@@ -1,0 +1,43 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-9"> 
+		<form>
+		 	<div class="page-header">
+		 	 	<h1>Registro de envios</h1>
+		 	 </div>
+		  	
+            <p>
+                <input type="radio" name="nacional" value="envio nacional" > Envio nacional
+                <input type="radio" name="internacional" value="envio internacional" > Envio internacional
+            </p>
+             <p>
+		   		<label for="cliente" >Remitente</label>
+		   	 	<input type="text" name="remitente" required>
+		 	</p>
+           	<p>
+		   		<label for="origen" >Origen</label>
+		   	 	<input type="text" name="origen" required>
+		 	</p>
+
+             <p>
+		   		<label for="destinatario" >Destinatario</label>
+		   	 	<input type="text" name="destinatario" required>
+		 	</p>
+            <p>
+		   		<label for="destino" >Destino</label>
+		   	 	<input type="text" name="destino" required>
+		 	</p>
+		 	<p>
+		    	<label for="envio">Tipo de envio</label>
+		    	<select>
+		    		<option value="correo">Documentos o correo</option>
+		    		<option value="mercancia">Mercancia</option>
+		    	</select>
+		    	
+		  	</p>
+            
+		  	<p>
+		  		<input type="submit" name="go">
+		  	</p>
+		 </form>
+	</div>
+</div>

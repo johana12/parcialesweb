@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<meta charset="utf-8">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script type="text/javascript" scr="funciones.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<form class="contact_form" parent="_blank" method="POST" action="index.html" id="contact_form" runat="server"> 
+
+	<a href="registro.html"></a>
+
+	<script type="text/javascript">
+		$("cliente").click(function(event){
+			$("contenedor").load('registro.html');
+		});
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html">
+					<img title="tksis" src="imagen/tksis.jpg" />
+				</a>
+			</div>	
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Registro<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="registro.html" id="cliente">Registro de Cliente</a></li>
+						<li><a href="registro.html" id="mensajero">Registro de Mensajero</a></li>
+						<li><a href="registroenvio.html" id="envio">Registro de Envio</a></li>
+					</ul>
+				</li>
+				<li><a href="iniciosesion.html" id=iniciosesion>Iniciar Sesion</a></li>
+				<li><a href="formulario.html" id=formulario>Formulario</a></li>
+				<li><a href="contacto.html" id=contacto>Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+<div class="container" id="contenedor">		
+	<div class="row">
+		<div class="col-xs-12 col-sm-12">
+			<div class="page-header">
+				
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			
+		</div>
+	</div>
+</div>
+<div class="container">
+	<ul class="nav navbar-nav">
+
+	</ul>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="col-xs-12 col-sm-6">
+			<p class="text-mute">
+				<p>&copy; 2018 tksis.com<p></p>
+		</div>
+	<div class="col-xs-12 col-sm-6">
+		<p></p>
+	</div>
+	</div>
+</footer>
+</body>
+</html>
+

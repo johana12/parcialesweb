@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>TeEnviamosLoQueSea</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" class="active" href="index.html">Te Enviamos Lo Que Sea S.A.S</a>
+        </div>
+        <div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="login">Login</a></li>
+          <li> <a href="#" id="servicio">Solicitar Servicio</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Registros <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li> <a href="#" id="cliente">Registrar Cliente</a></li>
+            <li> <a href="#" id="mensajero">Registrar Mensajero</a></li>
+          </ul>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+<div class="container" id="contenedor">
+
+  <!--Seccion de Productos-->
+  <div class="row">
+    <div class="col-md-12 col-sm-6 col-xs-6">
+      <h2 class="page-header">Servicios más Solicitados</h2>
+    </div>
+
+    <!-- Productos -->
+    
+    <div class="col-6 col-md-4 product-home">
+      <img class="mediana" class="img-fluid img-portfolio img-hover mb-3" src="https://www.domiciliosbucaramanga.com/wp-content/uploads/2017/06/comida-rapidas.jpg"/>
+      <div class="caption">
+        <h4 class="pull-left">Comidas Rápidas</h4>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 product-home">
+      <img class="mediana" class="img-fluid img-portfolio img-hover mb-3" src="http://actualidades.org/wp-content/uploads/productos-limpieza-hogar.jpg"/>
+      <div class="caption">
+        <h4 class="pull-left">Útiles de Aseo</h4>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 product-home">
+      <img class="mediana" class="img-fluid img-portfolio img-hover mb-3" src="http://3.bp.blogspot.com/-LoD2IwGAC_Q/UxjIz1k8WnI/AAAAAAAARjQ/u_bkVfgZF4E/s1600/los-10-productos-de-belleza-mas-utiles-que-deberias-conocer.jpg"/>
+      <div class="caption">
+        <h4 class="pull-left">Productos de Belleza</h4>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+</div>
+</div>
+</body>
+
+<hr>
+      <footer>
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="powerd-by">&copy; 2018 Bootstrap. All Rights Reserved. Powered by </p>
+          </div>
+        </div>
+      </div>
+      </footer>
+
+<script type="text/javascript">
+  $("#cliente").click(function(event){
+  $("#contenedor").load('registerCliente.html');
+});
+</script>
+
+<script type="text/javascript">
+  $("#login").click(function(event){
+  $("#contenedor").load('login.html');
+});
+</script>
+
+<script type="text/javascript">
+  $("#mensajero").click(function(event){
+  $("#contenedor").load('registerMensajero.html');
+});
+</script>
+
+<script type="text/javascript">
+  $("#servicio").click(function(event){
+  $("#contenedor").load('registerEnvios.html');
+});
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
+
+

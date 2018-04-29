@@ -1,0 +1,105 @@
+
+<!---->
+<div class="container" id="contenedor">
+	
+   
+    
+    <div class="page-header">
+			<h1>Registrar<small>&nbsp Registro de mensajero</small></h1>
+			<h3 >Modificar formulario<small>&nbsp Si deseas modificar el formulario da click <a href="#" id="ope_uno" >aqui</a></small></h3>
+			 
+		</div>
+    <form>
+       
+       <div id="contenedor_form">
+        
+    <div class="form-group">
+        <label for="nombre" class="control-label">Nombre completo</label>
+        <input type="text" class="form-control" name="name">
+    </div>    
+
+        
+        
+    <div class="form-group">
+        <label for="celular" class="control-label">Numero telefonico</label>
+            <div id="telf">
+                <input type="text" name="telf_1"><input type="button" id="add_kid()" onclick="agregarTelefono()" value="+" />
+            </div> 
+        
+    </div>    
+        
+    <div class="form-group">
+        <label for="direccion" class="control-label">Dirección actual</label>
+        <input type="text" class="form-control" name="direccion" >
+    </div>                    
+
+                  
+    <div class="form-group">
+        <label for="ciudad" class="control-label">Ciudad de residencia</label>
+        <select class="form-control" id="ciudad">
+            <option value="CU">Cúcuta</option>
+            <option value="BO">Bogota</option>
+            <option value="ME">Medellin</option>
+            <option value="CA">Cali</option>
+            <option value="CI">Cartagena de indias</option>
+            <option value="SM">Santa Marta</option>
+            <option value="AR">Armenia</option>      
+        </select>                    
+    </div>
+        
+    <div class="form-group">
+ <label for="comentarios" class="control-label">Ingresa algun comentario</label>                
+        <textarea class="form-control" name="comentarios" rows="7" maxlength="100%"></textarea>
+        </div>
+        
+         <div class="form-group">
+        <label for="Estado civil" class="control-label">Ingresa tu estado civil</label> 
+        <div class="checkbox">
+             <label><input type="checkbox" value="SO">Soltero</label>
+                <label><input type="checkbox" value="CA">Casado</label>
+                <label><input type="checkbox" value="DI">Divorciado</label>
+             </div>
+        </div>
+          
+            <div class="form-group">
+        <label for="correo" class="control-label">Ingrese correo</label>
+        <input type="text" class="form-control" name="correo" >
+    </div>
+               
+        <div class="form-group">
+        <label for="clave" class="control-label">Ingrese clave</label>
+        <input type="password" class="form-control" name="clave" >
+    </div> 
+                       
+    <div class="form-group">
+    <button class="submit btn btn-success" type="submit">Registrar mesajero</button>
+    </div>
+   </div>
+ 
+</form>
+  </div>
+  
+<!-- -->
+       
+    <script type="text/javascript">
+	
+        $("#ope_uno").click(function(event){
+		$("#contenedor_form").load("../paginas/generador_forms_mens.html");
+	});
+    //AGG Y QUITAR TELEFONOS
+        var i=1;
+          function agregarTelefono(){
+              i++;
+              var div=document.createElement('div');
+              div.innerHTML='<input type="text" name="telf_'+i+'"><input type="button" id="agregarTelefono()" onclick="agregarTelefono()" value="+" /><input type="button"  onclick="quitarTelefono(this)" value="-"/>'
+              document.getElementById('telf').appendChild(div);
+          }
+          function quitarTelefono(div){
+              document.getElementById('telf').removeChild(div.parentNode);
+              i--;
+          }
+        
+        
+        
+</script>
+    

@@ -1,0 +1,173 @@
+@font-face {
+	font-family: "fuente_uno";
+	src: url("../fonts/fuente_1.ttf");
+}
+
+@font-face {
+	font-family: "fuente_dos";
+	src: url("../fonts/fuente_2.ttf");
+}
+@font-face {
+	font-family: "fuente_tres";
+	src: url("../fonts/fuente_3.ttf");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.container-fluid{
+    padding: 0 15px;
+    margin: 0 -15px;
+}
+#sec_1{
+    margin-top: -40px;
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/fondo_1.jpg);
+    background-size:cover ;
+    background-attachment: fixed;
+    
+}
+
+#sec_1 h3{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "fuente_dos";
+    color: white;
+    padding-top: 100px;
+}
+
+
+#sec_1 p{
+    text-align: center;
+    font-size: 1.8em;
+    font-family: "fuente_uno";
+    color: white;
+}
+
+#sec_2 article{
+    height: 700px;
+    padding: 40px;
+}
+#sec_2 #centrar{
+text-align: center;
+}
+#sec_2 article img{
+    width: 300px;
+    height: 300px;
+    
+}
+#sec_2 article h3{
+    color: #2C3E50;
+    text-align: center;
+    font-size:2.0em; 
+    font-family: "fuente_tres";
+    font-weight:bold;
+}
+
+#sec_2 article p{
+    color: #2C3E50;
+    text-align: justify;
+    font-size:1.4em; 
+    font-family: "fuente_tres";
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background: #17202A;
+}
+footer p{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: "fuente_tres";
+    font-size: 1.5em;
+}
+
+.btn_gen{
+    display: flex;
+  justify-content: center;
+    padding-bottom: 50px;
+   
+}
+
+
+.bot_for{
+ width: 100%;
+}
+#formulario{
+    width: 90%;
+    margin: 0 auto;
+    background: #F2F4F4;
+    padding: 50px;
+}
+#ini_sec{
+    width: 50%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+/*********************/
+@media (min-width: 1000px){
+
+    #menu{
+    float: right;
+
+}
+#sec_1{
+    border-bottom: 12px solid black;
+    
+}
+
+#sec_1 h3{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "fuente_dos";
+    color: white;
+    padding-top: 100px;
+}
+
+
+#sec_1 p{
+    text-align: center;
+    font-size: 1.8em;
+    font-family: "fuente_uno";
+    color: white;
+}
+
+ #sec_2 article{
+     margin-top: 40px;
+    height: 400px;
+    padding-top: 40px;
+    padding: 20px;
+}
+#sec_2 article img{
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding-right: 15px;
+
+    
+}
+#sec_2 article h3{
+   
+    color: #2C3E50;
+    font-size:2.0em; 
+    font-family: "fuente_tres";
+    font-weight:bold;
+}
+#sec_2 article p{
+   
+    color: #2C3E50;
+    text-align: justify;
+    font-size:1.4em; 
+    font-family: "fuente_tres";
+    
+}   
+    
+}
+    

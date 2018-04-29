@@ -1,0 +1,90 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Primer Previo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="contenedor">
+<header>
+    <div class ="logo">
+<img class="imagen_logo" src="img/envios.png" alt="logo">
+</div>
+<div class="titulo">
+<h1> Te Enviamos Lo Que Sea S.A.S</h1>
+</div>
+
+</header>
+
+
+<nav class="navbar navbar-default">
+	<div class="container">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only"> Toggle navigation</span>	
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+    <div class="container  collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#" data-menu="fotos">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Clientes<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-menu="clientes">Registrar Cliente</a></li>
+            <li><a href="#" data-menu="listacliente">Lista de Clientes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mensajeros <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-menu="mensajeros"> Registrar Mensajero</a></li>
+            <li><a href="#" data-menu="listamensajero"> Lista de Mensajeros</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Envios <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" data-menu="envios">Registrar Envio</a></li>
+            <li><a href="#" data-menu="listaenvio">Lista de Envios</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</nav>
+<div class="container" id="contenedor">
+<div class="row">
+	<div class="col-xs-12 col-sm-1"></div>
+	<div class="col-xs-12 col-sm-10">
+    
+	</div>
+	<div class="col-xs-12 col-sm-1"></div>
+</div>
+</div>
+<br>
+<footer class="footer">
+<div class="container">
+	<p class="text-muted" style="color: white; text-align: center;">Copyright © - 2018 </p>
+</div>
+<script type="text/javascript">
+    $("li a").click(function(event){
+    	event.preventDefault();
+    	if($(this).data('menu')!= null){
+           $("#contenedor").load($(this).data('menu')+'.html');
+    	}
+	});
+	 $("td a").click(function(event){
+    	event.preventDefault();
+    	if($(this).data('mm')!= null){
+           $("#contenedor").load($(this).data('mm')+'.html');
+    	}
+	});
+
+</script>
+</footer>
+</body>
+</html>
