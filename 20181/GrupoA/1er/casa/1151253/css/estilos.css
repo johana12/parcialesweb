@@ -3,8 +3,10 @@ header{
 	color: #fff;
 	text-align: 
 }
-header h1{
+#titulo{
 	text-align: center;
+	margin-left: 40px;
+
 }
 header img{
 	border-radius: 400px;
